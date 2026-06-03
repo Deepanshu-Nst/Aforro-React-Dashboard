@@ -97,7 +97,7 @@ export default function TopNavbar() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-30 flex items-center h-[90px] px-8 bg-white transition-all duration-300",
+        "sticky top-0 z-30 flex items-center h-[90px] pl-[72px] pr-4 lg:px-8 bg-white transition-all duration-300",
         scrolled
           ? "shadow-[0_4px_24px_rgba(0,0,0,0.04)] border-b border-[#F3F4F6]"
           : "border-b-0" // The border feels too rigid when un-scrolled on some dashboards
@@ -109,7 +109,7 @@ export default function TopNavbar() {
       </h1>
 
       {/* ── Search (centered, Figma-style, wider with more padding) ── */}
-      <div className="flex-1 flex justify-start lg:justify-center pr-8">
+      <div className="flex-1 flex justify-start lg:justify-center pr-4 lg:pr-8">
         <div className="relative w-full max-w-[420px]">
           {/* Purple search icon */}
           <span
