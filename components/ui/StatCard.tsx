@@ -20,7 +20,7 @@ const schemes = {
   purple: { bg: "#F3E8FF", iconBg: "#BF83FF", iconColor: "#FFFFFF" },
 };
 
-export default function StatCard({ icon: Icon, value, label, change, isPositive, colorScheme, index }: StatCardProps) {
+export default function StatCard({ icon: Icon, value, label, change, colorScheme, index }: StatCardProps) {
   const s = schemes[colorScheme];
 
   return (

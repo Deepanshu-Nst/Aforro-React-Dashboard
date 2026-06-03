@@ -114,9 +114,9 @@ export default function UserFilters({ search, onSearchChange, sortOrder, onSortC
       <AnimatePresence>
         {hasFilters && (
           <motion.button
-            initial={{ opacity: 0, w: 0, x: -10 }}
-            animate={{ opacity: 1, w: "auto", x: 0 }}
-            exit={{ opacity: 0, w: 0, x: -10 }}
+            initial={{ opacity: 0, width: 0, x: -10 }}
+            animate={{ opacity: 1, width: "auto", x: 0 }}
+            exit={{ opacity: 0, width: 0, x: -10 }}
             onClick={() => { onSearchChange(""); onSortChange(null); onCityFilterChange(""); }}
             className="flex items-center gap-1.5 text-[13px] font-bold text-[#EF4444] hover:text-[#DC2626] transition-colors ml-1 px-2 py-2 rounded-lg hover:bg-red-50"
           >
