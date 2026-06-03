@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // No experimental turbo root needed - that caused the warning
 };
 
 export default nextConfig;
